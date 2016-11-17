@@ -1,0 +1,4 @@
+#Mon Feb 02 11:41:22 CST 2015
+eclipse.preferences.version=1
+validator.Checked=WebRoot/scripts/common/ue/dialogs/formula/formula.js,WebRoot/scripts/common/ue/umeditor.min.js
+validator.Unchecked=
