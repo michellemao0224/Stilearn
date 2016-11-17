@@ -1,1 +1,23 @@
-# Stilearn
+# Narrative
+
+Construction of a new E-learning platform in Tarena
+
+N 1.1 Within this narrative, I will specify my working experience as a software engineer for building a new E-learning plaform called Stilearn in Tarena International Inc. which locates at Changsha in China. Stilearn is a web application development project in the management of daily notes and events. I underwent this project from March 2015 to July 2015, where I took responsible for the implementation of both frontend and backend.
+
+N 1.2 The Stilearn website was designed by web developer using Html, CSS and JavaScript, whilst at the time the whole website was static that cannot response any request from user. Meanwhile, there were 10 relations created by database developer. My project manager first delegated the task for me was to build environment for web server and IDE tool. Before I started my coding, I was helping my team to find the best practice for building the framework. I was convinced that Spring MVC framework can provide more flexible model-view-controller architecture and loosely coupled web applications. I shared my idea to my team with detailed solutions, and they took my advice and added aspect-oriented programming (AOP) and MyBatis for dynamic coupling SQL statement.
+
+N 1.3 After confirming the design criteria, my task was how to map the entity class to relational schema as well as to implement this process via functional modules of MVC. I found that if every time to access to the data source with same function in different entity classes, it could increase code redundancy which consumes ample stack memory. My solution to this point was using a Data Access Object (DAO) to encapsulate an abstract function as an interface through which data source and component can be seamlessly connected. Also, this solution can make my code more clean and readable.
+
+N 1.4 When implementing the log in and sign up page, it is vital to protect user privacy. At the same time, I thought as a software engineer we should consider how to prevent cyber-attack as well. I adopted the HTTP basic authentication which encrypted username and password by Base64 encoding scheme. Besides, I generated a unique token for each user after the successful login, and put the token into the cookie of browser for future checking if this user already exists. 
+
+N 1.5 In the next stage, I considered the response time between server and browser for each request. I noticed that If I use the B/S (browser/server) model to send XmlHttpRequest to server, other browsers should all wait the current request to finish that is a one-time synchronous communication. For eliminating the “freezing” on the screen, I performed the AJAX technique to asynchronous retrieve data. I realized that AJAX is an effective way to migrate the traffic travels between the client and the server because we can use JSON instead of XML to bind the event with less code and files.
+
+N 1.6 Everything went well until I tried to bind the event listener to jQuery selector with “on function”, I was trapped by adding an element of class “b” to an existing element of id “a”. Then I sorted out all the elements one by one in a logical order. Moreover, if I bind the event which be called several times, then the binding will show up for multiple times.  I communicated with my project manager about this issue and searched the Internet to find the best solution to make it more efficient.
+
+N 1.7 Apart from web implementation, I communicated with database developer quite often concerning Spring Framework transaction management. I found that declarative transaction management requires simpler API in which only needs to add “@Transactional” annotation and transactional metadata. Meanwhile, as a software engineer I should learn how to handle exceptions within software, hence the other reason why I chosen declarative transaction management was that the automatic rollback function can effectively avoid exceptions. My project manager approved my decision based on above reasons.
+
+N 1.8 In the final stage, I have done the integration testing for the Spring MVC framework. Basically, I tested every module via Junit testing. For me, my aim is not only to write neat code, but also to make my code work. Through each testing, the maintainable and robust code can keep yourself to move on and achieve the ultimate goal.
+
+N 1.9 I enjoyed to be part of the team since I can give many my advice towards the Stilearn itself, such as letting user to create events align with notes, adding a share function with social plugins and setting up event notifications. My goal was to help the company to better commercialize a new product, and it turned out Stilearn is a user-friendly and lightweight web application.
+
+
